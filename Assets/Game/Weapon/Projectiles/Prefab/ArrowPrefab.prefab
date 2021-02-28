@@ -79,6 +79,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeffaa666cd86f942937f828e44c28a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _owner: 
+  _team: 0
   _damage: 20
   _onContactMapObject:
     m_PersistentCalls:
@@ -214,9 +216,8 @@ MonoBehaviour:
         m_CallState: 2
   _blockBy:
     serializedVersion: 2
-    m_Bits: 114688
+    m_Bits: 448
   _rootTransform: {fileID: 5780069460046052722}
-  _collider: {fileID: 7231185383377154182}
   _rb: {fileID: 3175942976942789106}
   _maxAngular: -5
   _maxDistanceForMaxAngular: 30

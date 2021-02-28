@@ -38,7 +38,7 @@ public class EffectCameraController : MonoBehaviour
         Vector3 to;
         if (active)
         {
-            to = Vector3.one * 120f;
+            to = Vector3.one * 200f;
             _onEVisionBegin.Invoke();
         }
         else

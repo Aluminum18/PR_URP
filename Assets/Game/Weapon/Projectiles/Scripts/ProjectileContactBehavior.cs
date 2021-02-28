@@ -66,17 +66,17 @@ public class ProjectileContactBehavior : MonoBehaviour
 
         switch (colliderLayer)
         {
-            case 14: // MapBound
+            case 6: // Terrain
                 {
                     HandleContactMapObject();
                     break;
                 }
-            case 15: // Terrain
+            case 7: // MapBound
                 {
                     HandleContactMapObject();
                     break;
                 }
-            case 16: // Player
+            case 8: // Player
                 {
                     HandleContactPlayer(collider);
                     break;

@@ -73,15 +73,11 @@ public class ChangeSceneRequester : MonoSingleton<ChangeSceneRequester>
             return;
         }
 
-        // Delay 3 frame for smooth animation, first frame offen handles heavy tasks
-        Observable.TimerFrame(3).Subscribe(_ =>
+        for (int i = 0; i < _transitionObjects.Count; i++)
         {
-            for (int i = 0; i < _transitionObjects.Count; i++)
-            {
-                var transitionObj = _transitionObjects[i];
-                transitionObj.DoCloseSceneAnim(_closeSceneDuration);
-            }
-        });     
+            var transitionObj = _transitionObjects[i];
+            transitionObj.DoCloseSceneAnim(_closeSceneDuration);
+        }
     }
 
     protected override void DoOnAwake()

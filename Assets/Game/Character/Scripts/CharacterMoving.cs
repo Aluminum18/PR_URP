@@ -131,4 +131,15 @@ public class CharacterMoving : MonoBehaviour
 
         _isMoving = false;
     }
+
+    private void Update()
+    {
+        if (_chaCon.isGrounded)
+        {
+            return;
+        }
+
+        // apply gravity
+        _chaCon.SimpleMove(_direction + Vector3.zero);
+    }
 }

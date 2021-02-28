@@ -677,7 +677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4380301768521756394, guid: f7327b1066e04544783cbb0e24d0e1f4, type: 3}
       propertyPath: _blockBy.m_Bits
-      value: 16384
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 4380301768521756394, guid: f7327b1066e04544783cbb0e24d0e1f4, type: 3}
       propertyPath: _onArrowStartMove.m_PersistentCalls.m_Calls.Array.data[1].m_Target
