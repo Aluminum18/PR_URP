@@ -6,6 +6,6 @@
   <string name="project_id" translatable="false">fir-test-d1e63</string>
   <string name="google_api_key" translatable="false">AIzaSyBT2YkCWux4BhRMt2obYhRLGJ2jnTqTmKI</string>
   <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBT2YkCWux4BhRMt2obYhRLGJ2jnTqTmKI</string>
-  <string name="google_app_id" translatable="false">1:1058658447265:android:e34bb3f9c361a04141a5e0</string>
+  <string name="google_app_id" translatable="false">1:1058658447265:android:ce8e09bb71009bdc41a5e0</string>
   <string name="default_web_client_id" translatable="false">1058658447265-jhkm75gqihrsue5todo4j5i2kpj0eof8.apps.googleusercontent.com</string>
 </resources>

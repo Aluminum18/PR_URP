@@ -8,6 +8,42 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:1058658447265:android:ce8e09bb71009bdc41a5e0",
+        "android_client_info": {
+          "package_name": "com.nfq.pr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058658447265-jhkm75gqihrsue5todo4j5i2kpj0eof8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT2YkCWux4BhRMt2obYhRLGJ2jnTqTmKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058658447265-jhkm75gqihrsue5todo4j5i2kpj0eof8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1058658447265-ppoh3e7vkbnk6b1k9on7npefnjh37u5j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nfq.pr"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:1058658447265:android:e34bb3f9c361a04141a5e0",
         "android_client_info": {
           "package_name": "com.nfq.virtualoffice"
@@ -30,6 +66,13 @@
             {
               "client_id": "1058658447265-jhkm75gqihrsue5todo4j5i2kpj0eof8.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "1058658447265-ppoh3e7vkbnk6b1k9on7npefnjh37u5j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nfq.pr"
+              }
             }
           ]
         }
@@ -59,6 +102,13 @@
             {
               "client_id": "1058658447265-jhkm75gqihrsue5todo4j5i2kpj0eof8.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "1058658447265-ppoh3e7vkbnk6b1k9on7npefnjh37u5j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nfq.pr"
+              }
             }
           ]
         }
