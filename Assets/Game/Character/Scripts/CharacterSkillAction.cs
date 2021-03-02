@@ -185,11 +185,6 @@ public class CharacterSkillAction : MonoBehaviour
 
     private void HandleSingleStateSkill(SkillId skillId)
     {
-        if (_thisUserId.Value != _attribute.AssignedUserId)
-        {
-            return;
-        }
-
         _skillObjectMap.TryGetValue((int)skillId, out var skillObj);
         if (skillObj == null)
         {
