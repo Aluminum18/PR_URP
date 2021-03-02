@@ -232,7 +232,7 @@
     <Compile Include="Assets\Game\Firebase\Scripts\RealTimeDatabase\RealTimeDBConstants.cs" />
     <Compile Include="Assets\Game\Weapon\ProjectileSpawner\Scripts\AnimControllers\CrossbowControlCharacterAnim.cs" />
     <Compile Include="Assets\Photon\PhotonUtilities\SettingsScriptableObject\SettingsScriptableObject.cs" />
-    <Compile Include="Assets\Game\Room&amp;Lobby\ThisPlayer\ThisPlayerAccountInfo.cs" />
+    <Compile Include="Assets\Game\User\Scripts\ThisPlayerAccountInfo.cs" />
     <Compile Include="Assets\Game\Weapon\ProjectileSpawner\Scripts\AnimControllers\WeaponControlCharacterAnim.cs" />
     <Compile Include="Assets\Game\UI\HUD\HUD.cs" />
     <Compile Include="Assets\Game\Utils\Audio\AudioSourcePool.cs" />
@@ -436,6 +436,7 @@
     <Compile Include="Assets\Photon\Simple\Components\SyncOculus\Assistants\OculusAssist.cs" />
     <Compile Include="Assets\Game\Firebase\Scripts\RealTimeDatabase\RealTimeDBInitializer.cs" />
     <Compile Include="Assets\Game\Camera\Scripts\CharacterCameras.cs" />
+    <Compile Include="Assets\Game\Utils\KeepScriptableObjAlive.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -54,7 +54,7 @@ public class PlayerInRoomDisplayer : MonoBehaviour
             },
             () =>
             {
-
+                _playerName.text = "Guest";
             });
 
     }

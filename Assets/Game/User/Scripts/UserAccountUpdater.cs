@@ -96,6 +96,9 @@ public class UserAccountUpdater : MonoBehaviour
                 _userAccount.DisplayName = accountData.displayName;
                 _userAccount.Email = accountData.email;
 
+                _thisUserId.Value = _userAccount.Id;
+                _thisUserDisplayName.Value = _userAccount.DisplayName;
+
                 _onUserAccountInfoReadyInSO.Invoke();
             });
 
