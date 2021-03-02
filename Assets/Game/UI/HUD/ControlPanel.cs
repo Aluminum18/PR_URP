@@ -94,10 +94,10 @@ public class ControlPanel : MonoBehaviour
 
     private void CheckAndDeactivateControlPanel(object[] defeatedPlayer)
     {
-        //if ((string)defeatedPlayer[0] != _userId.Value)
-        //{
-        //    return;
-        //}
+        if ((string)defeatedPlayer[0] != _userId.Value)
+        {
+            return;
+        }
 
         _skillButtonsObj.SetActive(false);
         _shootButton.gameObject.SetActive(false);
