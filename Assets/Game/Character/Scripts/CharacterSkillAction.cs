@@ -206,8 +206,7 @@ public class CharacterSkillAction : MonoBehaviour
             userId = "";
         }
 
-        string thisCharacterUserId = _attribute.AssignedUserId;
-        if (!userId.Equals(thisCharacterUserId))
+        if (!userId.Equals(_attribute.AssignedUserId))
         {
             return;
         }
