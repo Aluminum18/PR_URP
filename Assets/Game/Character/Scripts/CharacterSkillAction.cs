@@ -31,7 +31,7 @@ public class CharacterSkillAction : MonoBehaviour
     {
         _skillObjectMap.Clear();
 
-        List<int> pickedSkills = _thisPickedSkills.List;
+        List<int> pickedSkills = _attribute.PickedSkills;
 
         if (pickedSkills == null)
         {

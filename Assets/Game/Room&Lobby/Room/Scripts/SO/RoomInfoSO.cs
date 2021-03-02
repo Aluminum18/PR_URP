@@ -195,4 +195,18 @@ public class RoomInfoSO : ScriptableObject
 
         return 0;
     }
+
+    public List<int> GetPickAtPos(int pos)
+    {
+        switch (pos)
+        {
+            case 1: return _pos1Picks;
+            case 2: return _pos2Picks;
+            case 3: return _pos3Picks;
+            case 4: return _pos4Picks;
+            case 5: return _pos5Picks;
+            case 6: return _pos6Picks;
+        }
+        return null;
+    }
 }

@@ -33,6 +33,7 @@ public class CharacterAttribute : MonoBehaviour
     private Vector3Variable _aimSpot;
     private Vector3Variable _joyStickDirection;
     private int _team = 0;
+    private List<int> _pickedSkills = new List<int>();
 
     public string AssignedUserId { get; set; }
     public int Team
@@ -44,6 +45,17 @@ public class CharacterAttribute : MonoBehaviour
                 _team = _roomInfo.GetTeam(AssignedUserId);
             }
             return _team;
+        }
+    }
+    public List<int> PickedSkills
+    {
+        get
+        {
+            if (_pickedSkills.Count == 0)
+            {
+                _pickedSkills = _roomInfo.GetPickAtPos(_roomInfo.GetPlayerPos(AssignedUserId));
+            }
+            return _pickedSkills;
         }
     }
     public bool IsThisPlayer
@@ -112,7 +124,7 @@ public class CharacterAttribute : MonoBehaviour
         {
             if (_aimSpot == null)
             {
-                _aimSpot = _inputHolders.GetInputValueHolder(_roomInfo.GetPlayerPos(_thisClientUserId.Value)).AimSpot;
+                _aimSpot = _inputHolders.GetInputValueHolder(_roomInfo.GetPlayerPos(AssignedUserId)).AimSpot;
             }
             return _aimSpot;
         }
@@ -124,7 +136,7 @@ public class CharacterAttribute : MonoBehaviour
         {
             if (_joyStickDirection == null)
             {
-                _joyStickDirection = _inputHolders.GetInputValueHolder(_roomInfo.GetPlayerPos(_thisClientUserId.Value)).JoyStickDirection;
+                _joyStickDirection = _inputHolders.GetInputValueHolder(_roomInfo.GetPlayerPos(AssignedUserId)).JoyStickDirection;
             }
             return _joyStickDirection;
         }
