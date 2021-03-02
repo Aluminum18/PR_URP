@@ -26,6 +26,12 @@ public class UserInfoFetcher : MonoSingleton<UserInfoFetcher>
                 }
 
                 var userData = getUserInfoTask.Result;
+                if (!userData.Exists)
+                {
+                    Debug.LogError($"Fail to get user info with id [{userId}]");
+                    failCallback?.Invoke();
+                    return;
+                }
 
                 successCallback?.Invoke(userData.ConvertTo<FireStoreUserInfo>());
             });

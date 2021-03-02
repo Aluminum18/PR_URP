@@ -108,7 +108,9 @@ public class UserAccountUpdater : MonoBehaviour
     {
         _userAccount.DisplayName = SystemInfo.deviceName;
         _userAccount.Id = SystemInfo.deviceUniqueIdentifier;
+
         _thisUserId.Value = _userAccount.Id;
+        _thisUserDisplayName.Value = _userAccount.DisplayName;
         _onUserAccountInfoReadyInSO.Invoke();
     }
 
