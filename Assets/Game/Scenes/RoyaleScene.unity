@@ -4363,7 +4363,7 @@ RectTransform:
   m_Father: {fileID: 1438346856}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
@@ -4572,7 +4572,7 @@ RectTransform:
   m_Father: {fileID: 1438346856}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
@@ -9176,6 +9176,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 527691167096621275, guid: f62610e9b516a4b66aac24ee2e430b63, type: 3}
   m_PrefabInstance: {fileID: 1357269198}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1374744386 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5559587465608915978, guid: 5784d1200c1a32944bb60415080e3fc5, type: 3}
+  m_PrefabInstance: {fileID: 3137695313812413022}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &1374744390
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374744386}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!4 &1376821196 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4568401172327179451, guid: 145e4762876f94e47a16e01ade026458, type: 3}
@@ -16467,6 +16484,38 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[7].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3137695315826629218, guid: 5784d1200c1a32944bb60415080e3fc5, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284877096062494799, guid: 5784d1200c1a32944bb60415080e3fc5, type: 3}
+      propertyPath: _uiCam
+      value: 
+      objectReference: {fileID: 1965791493}
+    - target: {fileID: 8284877096062494799, guid: 5784d1200c1a32944bb60415080e3fc5, type: 3}
+      propertyPath: _fadeInTime
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284877096062494799, guid: 5784d1200c1a32944bb60415080e3fc5, type: 3}
+      propertyPath: _fadeOutTime
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284877096062494799, guid: 5784d1200c1a32944bb60415080e3fc5, type: 3}
+      propertyPath: _parentCanvas
+      value: 
+      objectReference: {fileID: 1438346855}
+    - target: {fileID: 8284877096062494799, guid: 5784d1200c1a32944bb60415080e3fc5, type: 3}
+      propertyPath: _litmitDistance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284877096062494799, guid: 5784d1200c1a32944bb60415080e3fc5, type: 3}
+      propertyPath: _mapUpToForward
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284877096062494799, guid: 5784d1200c1a32944bb60415080e3fc5, type: 3}
+      propertyPath: _worldCamTransform
+      value: 
+      objectReference: {fileID: 1888772240}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5784d1200c1a32944bb60415080e3fc5, type: 3}
 --- !u!114 &3137695313812413023 stripped
