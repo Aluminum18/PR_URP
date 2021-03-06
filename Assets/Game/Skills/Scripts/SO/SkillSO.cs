@@ -17,6 +17,7 @@ public class SkillSO : ScriptableObject
     public SkillType SkillType;
     public SkillUsageType SkillState;
     public string SkillName;
+    [TextArea(1, 10)]
     public string SkillDesc;
     public float Cooldown;
     public int Cost;

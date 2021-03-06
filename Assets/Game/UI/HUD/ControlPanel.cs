@@ -23,7 +23,7 @@ public class ControlPanel : MonoBehaviour
 
     [Header("Config")]
     [SerializeField]
-    private Joystick _moveJoyStick;
+    private DynamicJoystick _moveJoyStick;
     [SerializeField]
     private Button _aimButton;
     [SerializeField]

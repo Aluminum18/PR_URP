@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1711264673335914127
 RectTransform:
   m_ObjectHideFlags: 0
@@ -377,8 +377,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -98.79999, y: 48.013004}
-  m_SizeDelta: {x: 337.25, y: 56.195}
+  m_AnchoredPosition: {x: -102.049866, y: 32.563}
+  m_SizeDelta: {x: 330.7503, y: 87.096}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &287768138156721001
 CanvasRenderer:
@@ -438,9 +438,9 @@ MonoBehaviour:
   m_fontSize: 20
   m_fontSizeBase: 20
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 20
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -905,7 +905,6 @@ MonoBehaviour:
   _remainPoint: {fileID: 11400000, guid: d932ef34a975a7a4882eea01c60b064e, type: 2}
   _skillList: {fileID: 11400000, guid: e890b51e014d5cf4d99519a5488eedb6, type: 2}
   _skillId: 0
-  _pickedSkills: {fileID: 0}
   _selectedFrame: {fileID: 1292242019599028962}
   _skillIcon: {fileID: 4892229905826916305}
   _skillPic: {fileID: 2921590888024636496}
@@ -1100,7 +1099,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -115.64, y: -27.099995}
+  m_AnchoredPosition: {x: -115.64, y: -58.00002}
   m_SizeDelta: {x: 303.58, y: 34.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3478641315343428332
@@ -1445,7 +1444,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -115.64, y: 2.9000053}
+  m_AnchoredPosition: {x: -115.64, y: -28}
   m_SizeDelta: {x: 303.58, y: 34.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3977216918428789500

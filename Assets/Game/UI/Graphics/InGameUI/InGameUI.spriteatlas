@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: InGameUI
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 80
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: d60c45a4b107da149b28e8caebf77c7d, type: 3}
+    totalSpriteSurfaceArea: 2039632
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: ca6bd9520c79bbf429585cdd6ebd5f36, type: 3}
+  - {fileID: 21300000, guid: 5eb01972fb6743d4d9983d0d836e307f, type: 3}
+  - {fileID: 21300000, guid: 1c7fed33c54788e47ba2275be664ec62, type: 3}
+  - {fileID: 21300000, guid: 102f3f5474359924dba44825d1afb890, type: 3}
+  - {fileID: 21300000, guid: 4b54bd263483825488ab643b8ac8563c, type: 3}
+  - {fileID: 21300000, guid: c20478e7d9f22da4d8cd76bca46ec50a, type: 3}
+  - {fileID: 21300000, guid: 733f8079e772f6d4cb36b2341cbb3ae1, type: 3}
+  - {fileID: 21300000, guid: 7f43e77a784660f409273f9c9336cb52, type: 3}
+  - {fileID: 21300000, guid: 61bcc7ca65f9aca46ac6527df65ad04a, type: 3}
+  - {fileID: 21300000, guid: 46e5199c7e44b984d8cea55d378ec56d, type: 3}
+  - {fileID: 21300000, guid: 60f0e79dfaf7ab347a6506ad0cf3d6a4, type: 3}
+  - {fileID: 21300000, guid: 617955ce8dcd8424eabbe35da8389ecf, type: 3}
+  - {fileID: 21300000, guid: 1fe96bdecd5ae674680d8e420fdd6d9c, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - third_eye_icon
+  - joystick
+  - arrow
+  - third_eye_icon_crop
+  - power_shot
+  - icon_health
+  - run
+  - Bow
+  - aim
+  - arrnade_icon
+  - Arbalest
+  - arrnade_explosion
+  - mul_arrows
+  m_RenderDataMap: {}
+  m_Tag: InGameUI
+  m_IsVariant: 0

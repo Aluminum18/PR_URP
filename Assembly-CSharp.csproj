@@ -295,6 +295,7 @@
     <Compile Include="Assets\Game\Firebase\Scripts\Firestore\FirestoreConstants.cs" />
     <Compile Include="Assets\Game\Weapon\Projectiles\Scripts\ArrNade.cs" />
     <Compile Include="Assets\Photon\Simple\Utilities\GUITools\NameTypeDrawer.cs" />
+    <Compile Include="Assets\Game\Utils\KeepScriptableObjAlive.cs" />
     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncContact.cs" />
     <Compile Include="Assets\Photon\Simple\Core\Interfaces\IPackObjOnReady.cs" />
     <Compile Include="Assets\Game\Character\Scripts\Legacy\CharacterActionSync.cs" />
@@ -304,6 +305,7 @@
     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\VitalsSystem\Vitals.cs" />
     <Compile Include="Assets\Game\Skills\Scripts\Manage\SkillCooldownCounter.cs" />
     <Compile Include="Assets\Libraries\UICreator\Scripts\UITransition.cs" />
+    <Compile Include="Assets\Game\UI\HUD\DynamicJoystick.cs" />
     <Compile Include="Assets\Photon\Simple\Utilities\ContactGroups\ContactGroupAssign.cs" />
     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\Structs\MatrixRB.cs" />
     <Compile Include="Assets\Photon\Simple\Components\SyncMover\SyncAdditiveMover.cs" />
@@ -436,7 +438,6 @@
     <Compile Include="Assets\Photon\Simple\Components\SyncOculus\Assistants\OculusAssist.cs" />
     <Compile Include="Assets\Game\Firebase\Scripts\RealTimeDatabase\RealTimeDBInitializer.cs" />
     <Compile Include="Assets\Game\Camera\Scripts\CharacterCameras.cs" />
-    <Compile Include="Assets\Game\Utils\KeepScriptableObjAlive.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
