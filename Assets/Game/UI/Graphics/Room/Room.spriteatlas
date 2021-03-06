@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Room
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 80
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 9dedd8cbd7915974bb19f01353a697f9, type: 3}
+    totalSpriteSurfaceArea: 1458176
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 64bf1d03c0b590c429e88f49019d0a20, type: 3}
+  - {fileID: 21300000, guid: 4c57c5859b8318a46a88f5a9ad975181, type: 3}
+  - {fileID: 21300000, guid: f59ced77acbec354f9162e97d4905833, type: 3}
+  - {fileID: 21300000, guid: 5fe2490a32da55b4db8209e81b6deeff, type: 3}
+  - {fileID: 21300000, guid: eceeb6cb52755b247bf1612ffa5f5eed, type: 3}
+  - {fileID: 21300000, guid: d3eca27d97183a0489211129a6a4d06d, type: 3}
+  - {fileID: 21300000, guid: 9ef9968e4151c9b49873f1bee82c4270, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Arrnade
+  - third_eye_pic
+  - crossbow_pic
+  - power_shot_pic
+  - ui_card_front
+  - Mulshot
+  - ui_card_back
+  m_RenderDataMap: {}
+  m_Tag: Room
+  m_IsVariant: 0
