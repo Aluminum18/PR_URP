@@ -438,12 +438,13 @@
     <Compile Include="Assets\Photon\Simple\Components\SyncOculus\Assistants\OculusAssist.cs" />
     <Compile Include="Assets\Game\Firebase\Scripts\RealTimeDatabase\RealTimeDBInitializer.cs" />
     <Compile Include="Assets\Game\Camera\Scripts\CharacterCameras.cs" />
+    <Compile Include="Assets\Game\Skills\Scripts\Activators\TeleportActivator.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-     <None Include="Assets\Game\Shaders\TerrainEagleVisionMarkup.shader" />
+     <None Include="Assets\Game\Share\Shaders\TerrainEagleVisionMarkup.shader" />
      <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
@@ -454,7 +455,7 @@
      <None Include="Assets\Photon\Simple\changelog-simple.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\Photon\PhotonUtilities\Compression\plugins\ByteConverter.xml" />
-     <None Include="Assets\Game\Shaders\TerrainEagleVision.shader" />
+     <None Include="Assets\Game\Share\Shaders\TerrainEagleVision.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />

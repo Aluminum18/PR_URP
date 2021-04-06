@@ -42,6 +42,20 @@ public class SkillDataGetter : MonoBehaviour
                     };
                     break;
                 }
+            case SkillId.Teleport:
+                {
+                    if (state == SkillState.Second)
+                    {
+                        break;
+                    }
+                    _onRequestUpdateAimSpot?.Raise();
+
+                    data = new object[]
+                    {
+                        inputHolder.AimSpot.Value
+                    };
+                    break;
+                }
             case SkillId.Crossbow:
                 {
                     break;

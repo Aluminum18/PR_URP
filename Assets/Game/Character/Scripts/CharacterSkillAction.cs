@@ -80,6 +80,15 @@ public class CharacterSkillAction : MonoBehaviour
                     skillAnimControl.AttachModel(_attribute.ArrNadeModelTransform);
                     break;
                 }
+            case SkillId.Teleport:
+                {
+                    activator.Setup(_attribute.AimSpot, transform);
+
+                    var skillAnimControl = skillObj.GetComponent<SkillAnimControl>();
+                    skillAnimControl.Setup(_attribute.AnimController);
+                    skillAnimControl.AttachModel(_attribute.DaggerModelTransform);
+                    break;
+                }
             case SkillId.PowerShot:
                 {
                     // delay 1 frame to make sure the weapon is latest;
@@ -113,74 +122,50 @@ public class CharacterSkillAction : MonoBehaviour
 
     private void ActivateSkill(SkillId skillId, SkillState skillState, object[] skillData)
     {
-        switch (skillId)
+        var skillSO = _skillList.GetSkill((int)skillId);
+
+        if (skillSO.SkillType.Equals(SkillType.Passive))
         {
-            case SkillId.ArrNade:
-                {
-                    _skillObjectMap.TryGetValue((int)skillId, out var skillObj);
-                    if (skillObj == null)
-                    {
-                        return;
-                    }
-
-                    if (skillState.Equals(SkillState.Second))
-                    {
-                        skillObj.GetComponent<SkillActivator>()?.ActiveSecondState();
-                    }
-                    else
-                    {
-                        skillObj.GetComponent<SkillActivator>()?.ActiveFirstState();
-                    }
-
-                    break;
-                }
-            case SkillId.ThirdEye:
-                {
-                    HandleSingleStateSkill(skillId);
-                    break;
-                }
-            case SkillId.PowerShot:
-                {
-                    HandleSingleStateSkill(skillId);
-                    break;
-                }
-            case SkillId.MulShot:
-                {
-                    HandleSingleStateSkill(skillId);
-                    break;
-                }
-            case SkillId.Crossbow:
-                {
-                    var skillObject = _skillObjectMap[(int)skillId];
-                    if (skillObject == null)
-                    {
-                        return;
-                    }
-                    var weapon = skillObject.GetComponent<RangeTargetableWeapon>();
-                    if (weapon == null)
-                    {
-                        return;
-                    }
-
-                    weapon.SetTeamAndOwner(_attribute.Team, _attribute.AssignedUserId);
-                    _characterAction.SetWeapon(weapon);
-                    weapon.SetTarget(_attribute.AimSpot);
-
-                    var crossbowAnimControl = skillObject.GetComponent<CrossbowControlCharacterAnim>();
-                    if (crossbowAnimControl == null)
-                    {
-                        return;
-                    }
-                    crossbowAnimControl.SetAnimator(_attribute.Animator);
-                    crossbowAnimControl.SetAnimControl(_attribute.AnimController);
-                    crossbowAnimControl.ActiveWeaponLayer(true);
-                    break;
-                }      
-            default:
-                {
-                    return;
-                }
+            HandlePassiveSkill(skillId);
+            return;
         }
+
+        if (skillSO.SkillUsageType.Equals(SkillUsageType.SingleState))
+        {
+            HandleSingleStateSkill(skillId);
+            return;
+        }
+
+        HandleDoubleStateSkill(skillId, skillState);
+    }
+
+    private void HandlePassiveSkill(SkillId skillId)
+    {
+        // refactor this
+        var skillObject = _skillObjectMap[(int)skillId];
+        if (skillObject == null)
+        {
+            return;
+        }
+        var weapon = skillObject.GetComponent<RangeTargetableWeapon>();
+        if (weapon == null)
+        {
+            return;
+        }
+
+        weapon.SetTeamAndOwner(_attribute.Team, _attribute.AssignedUserId);
+        weapon.SetTarget(_attribute.AimSpot);
+
+        _characterAction.SetWeapon(weapon);
+
+        var crossbowAnimControl = skillObject.GetComponent<CrossbowControlCharacterAnim>();
+        if (crossbowAnimControl == null)
+        {
+            return;
+        }
+        crossbowAnimControl.SetAnimator(_attribute.Animator);
+        crossbowAnimControl.SetAnimControl(_attribute.AnimController);
+        crossbowAnimControl.ActiveWeaponLayer(true);
     }
 
     private void HandleSingleStateSkill(SkillId skillId)
@@ -192,6 +177,24 @@ public class CharacterSkillAction : MonoBehaviour
         }
 
         skillObj.GetComponent<SkillActivator>()?.ActiveFirstState();
+    }
+
+    private void HandleDoubleStateSkill(SkillId skillId, SkillState skillState)
+    {
+        _skillObjectMap.TryGetValue((int)skillId, out var skillObj);
+        if (skillObj == null)
+        {
+            return;
+        }
+
+        if (skillState.Equals(SkillState.Second))
+        {
+            skillObj.GetComponent<SkillActivator>()?.ActiveSecondState();
+        }
+        else
+        {
+            skillObj.GetComponent<SkillActivator>()?.ActiveFirstState();
+        }
     }
 
     private void HandleActivateSkill(object[] eventParam)

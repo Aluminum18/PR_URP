@@ -44,12 +44,13 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: d60c45a4b107da149b28e8caebf77c7d, type: 3}
-    totalSpriteSurfaceArea: 2039632
+    totalSpriteSurfaceArea: 2301776
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 9dbc37d04b95b094190e75225ed4fb61, type: 3}
   - {fileID: 21300000, guid: ca6bd9520c79bbf429585cdd6ebd5f36, type: 3}
   - {fileID: 21300000, guid: 5eb01972fb6743d4d9983d0d836e307f, type: 3}
   - {fileID: 21300000, guid: 1c7fed33c54788e47ba2275be664ec62, type: 3}
@@ -64,6 +65,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 617955ce8dcd8424eabbe35da8389ecf, type: 3}
   - {fileID: 21300000, guid: 1fe96bdecd5ae674680d8e420fdd6d9c, type: 3}
   m_PackedSpriteNamesToIndex:
+  - teleportIcon
   - third_eye_icon
   - joystick
   - arrow

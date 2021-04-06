@@ -18,6 +18,10 @@ public class SkillActivator : MonoBehaviour
     private UnityEvent _onStartCastFirst;
     [SerializeField]
     private UnityEvent _onFinishCastFirst;
+    [SerializeField]
+    private UnityEvent _onStartCastSecond;
+    [SerializeField]
+    private UnityEvent _onFinishCastSecond;
 
     [Header("Config")]
     [SerializeField]
@@ -59,9 +63,11 @@ public class SkillActivator : MonoBehaviour
 
     public void ActiveSecondState()
     {
+        _onStartCastSecond.Invoke();
         Observable.Timer(TimeSpan.FromSeconds(_skillSO.CastTimeSecond)).Subscribe(_ =>
         {
             SecondState();
+            _onFinishCastSecond.Invoke();
         }
         );
     }

@@ -82,7 +82,7 @@ public class SkillButton : MonoBehaviour
 
     public void ActivateFirstState()
     {
-        if (_skillSO.SkillState.Equals(SkillUsageType.DoubleState))
+        if (_skillSO.SkillUsageType.Equals(SkillUsageType.DoubleState))
         {
             ActiveFirstButton(false);
             ActiveSecondButton(true);
@@ -95,7 +95,7 @@ public class SkillButton : MonoBehaviour
 
     public void ActivateSecondState()
     {
-        if (_skillSO.SkillState.Equals(SkillUsageType.DoubleState))
+        if (_skillSO.SkillUsageType.Equals(SkillUsageType.DoubleState))
         {
             ActiveFirstButton(true);
             ActiveSecondButton(false);

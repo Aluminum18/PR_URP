@@ -15,7 +15,7 @@ public class SkillSO : ScriptableObject
 
     [Header("Reference from server")]
     public SkillType SkillType;
-    public SkillUsageType SkillState;
+    public SkillUsageType SkillUsageType;
     public string SkillName;
     [TextArea(1, 10)]
     public string SkillDesc;
@@ -59,7 +59,8 @@ public enum SkillId
     MulShot = 2,
     ArrNade = 3,
     ThirdEye = 4,
-    Crossbow = 5
+    Crossbow = 5,
+    Teleport = 6
 }
 
 public enum SkillType

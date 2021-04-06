@@ -29,6 +29,8 @@ public class CharacterAttribute : MonoBehaviour
     private Animator _animator;
     [SerializeField]
     private Transform _arrnadeModelPos;
+    [SerializeField]
+    private Transform _daggerModelPos;
 
     private Vector3Variable _aimSpot;
     private Vector3Variable _joyStickDirection;
@@ -160,6 +162,14 @@ public class CharacterAttribute : MonoBehaviour
         get
         {
             return _arrnadeModelPos;
+        }
+    }
+
+    public Transform DaggerModelTransform
+    {
+        get
+        {
+            return _daggerModelPos;
         }
     }
 
