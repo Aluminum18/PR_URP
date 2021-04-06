@@ -784,6 +784,23 @@ MonoBehaviour:
   _onRoomCreated: {fileID: 11400000, guid: 785b47dbe29036c4d86162fdc2f5f9e6, type: 2}
   _onJoinedRoom: {fileID: 11400000, guid: bfaf95f7ec94dd14fb865633057719f5, type: 2}
   _onLeftRoom: {fileID: 11400000, guid: 17873ab27efada247bf7d7d3b50780de, type: 2}
+--- !u!1 &560553288 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7163224755437760830, guid: 422172bce63db8f4c89d4d14e2edbf83, type: 3}
+  m_PrefabInstance: {fileID: 7163224754966002610}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &560553289
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560553288}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &565588415
 PrefabInstance:
   m_ObjectHideFlags: 0
