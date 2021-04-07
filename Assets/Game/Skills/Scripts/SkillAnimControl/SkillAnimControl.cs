@@ -35,6 +35,19 @@ public class SkillAnimControl : MonoBehaviour
         _animControl.PlayCastArrNade();
     }
 
+    public void PlayTeleportCast()
+    {
+#if UNITY_EDITOR
+        if (_animControl == null)
+        {
+            return;
+        }
+#endif
+        _animControl.PlayTeleport();
+    }
+
+
+
     public void PlayDraw()
     {
 #if UNITY_EDITOR

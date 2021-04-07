@@ -24,6 +24,18 @@ public class ObjectPool : MonoBehaviour
             return _pooledObject;
         }
     }
+    public Transform SpawnPos
+    {
+        get
+        {
+            return _spawnPos;
+        }
+
+        set
+        {
+            _spawnPos = value;
+        }
+    }
 
     public GameObject Spawn()
     {

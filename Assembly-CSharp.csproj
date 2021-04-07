@@ -326,6 +326,7 @@
     <Compile Include="Assets\Photon\Simple\Core\NetMaster\Interfaces\NetMasterInterfaces.cs" />
     <Compile Include="Assets\Game\Utils\FollowTranform.cs" />
     <Compile Include="Assets\Libraries\UICreator\Scripts\UIPanel.cs" />
+    <Compile Include="Assets\Game\Skills\Scripts\Activators\TeleportActivator.cs" />
     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\VitalsSystem\DataTypes\VitalData.cs" />
     <Compile Include="Assets\Game\Skills\Scripts\Activators\PowerShotActivator.cs" />
     <Compile Include="Assets\Photon\Simple\Core\NetMaster\NetMasterCallbacks.cs" />
@@ -438,7 +439,7 @@
     <Compile Include="Assets\Photon\Simple\Components\SyncOculus\Assistants\OculusAssist.cs" />
     <Compile Include="Assets\Game\Firebase\Scripts\RealTimeDatabase\RealTimeDBInitializer.cs" />
     <Compile Include="Assets\Game\Camera\Scripts\CharacterCameras.cs" />
-    <Compile Include="Assets\Game\Skills\Scripts\Activators\TeleportActivator.cs" />
+    <Compile Include="Assets\Game\Weapon\Projectiles\Scripts\BlinkDagger.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

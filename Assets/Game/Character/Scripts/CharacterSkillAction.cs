@@ -82,7 +82,7 @@ public class CharacterSkillAction : MonoBehaviour
                 }
             case SkillId.Teleport:
                 {
-                    activator.Setup(_attribute.AimSpot, transform);
+                    activator.Setup(_attribute.AimSpot, _attribute.ChaCon);
 
                     var skillAnimControl = skillObj.GetComponent<SkillAnimControl>();
                     skillAnimControl.Setup(_attribute.AnimController);

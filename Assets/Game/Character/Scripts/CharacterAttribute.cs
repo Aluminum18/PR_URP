@@ -24,6 +24,8 @@ public class CharacterAttribute : MonoBehaviour
     [SerializeField]
     private TargetableProjectileSpawner _arrowSpawner;
     [SerializeField]
+    private CharacterController _chaCon;
+    [SerializeField]
     private CharacterAnimController _animController;
     [SerializeField]
     private Animator _animator;
@@ -98,6 +100,13 @@ public class CharacterAttribute : MonoBehaviour
             return _aimLook;
         }
 
+    }
+    public CharacterController ChaCon
+    {
+        get
+        {
+            return _chaCon;
+        }
     }
     public CharacterAnimController AnimController
     {

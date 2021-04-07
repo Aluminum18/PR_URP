@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 671609313692716542}
   - component: {fileID: 5077796087457408707}
   - component: {fileID: 1281829480353237387}
+  - component: {fileID: 4217994091211917814}
+  - component: {fileID: 3984278174792325621}
   m_Layer: 0
   m_Name: TeleportActivator
   m_TagString: Untagged
@@ -63,19 +65,97 @@ MonoBehaviour:
   _team: 0
   _onStartCastFirst:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5077796087457408707}
+        m_TargetAssemblyTypeName: SkillAnimControl, Assembly-CSharp
+        m_MethodName: PlayTeleportCast
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _onFinishCastFirst:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4217994091211917814}
+        m_TargetAssemblyTypeName: World3dSoundPlayer, Assembly-CSharp
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 8a43cc11166258a4585d207c1e598f57, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _onStartCastSecond:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3984278174792325621}
+        m_TargetAssemblyTypeName: ObjectPool, Assembly-CSharp
+        m_MethodName: In_SpawnObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _onFinishCastSecond:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3984278174792325621}
+        m_TargetAssemblyTypeName: ObjectPool, Assembly-CSharp
+        m_MethodName: In_SpawnObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _skillSO: {fileID: 11400000, guid: 102e16937b9c04442b84b860e826dff5, type: 2}
   _ownerTransform: {fileID: 0}
   _daggerSpawner: {fileID: 1071827468762880812}
+  _teleportEffectPool: {fileID: 3984278174792325621}
+--- !u!114 &4217994091211917814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671609313692716528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af3d153a28316947b2f351dec25cfc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minDistance: 1
+  _maxDistance: 20
+--- !u!114 &3984278174792325621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671609313692716528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f85ec35c3e5d1e4885e95482bff2395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pooledObject: {fileID: 7654098310569840621, guid: 7231efe6a099c764e912165582a3fc63, type: 3}
+  _spawnPos: {fileID: 0}
+  _limitInstances: 2
 --- !u!1001 &6823188841124554505
 PrefabInstance:
   m_ObjectHideFlags: 0

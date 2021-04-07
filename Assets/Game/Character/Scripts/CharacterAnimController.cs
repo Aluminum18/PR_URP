@@ -156,6 +156,11 @@ public class CharacterAnimController : MonoBehaviour
         _animator.SetTrigger("ArrNadeCast");
     }
 
+    public void PlayTeleport()
+    {
+        _animator.SetTrigger("TeleportCast");
+    }
+
     public void PlayDraw()
     {
         _animator.SetTrigger("Draw");
