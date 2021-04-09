@@ -4876,4 +4876,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _disabledObject: {fileID: 1371996964377162567}
-  _disableAfter: 0.5
+  _disableAfter: 2

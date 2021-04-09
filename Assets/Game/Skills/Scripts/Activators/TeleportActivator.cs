@@ -12,12 +12,17 @@ public class TeleportActivator : SkillActivator
 
     [Header("Config")]
     [SerializeField]
+    private float _appearTime;
+    [SerializeField]
+    private Material _dissolveMat;
+    [SerializeField]
     private TargetableProjectileSpawner _daggerSpawner;
     [SerializeField]
     private ObjectPool _teleportEffectPool;
 
     private GameObject _dagger;
     private BlinkDagger _daggerComp;
+    private CharacterSkin _characterSkin;
 
     public override void Setup(params object[] args)
     {
@@ -36,6 +41,8 @@ public class TeleportActivator : SkillActivator
         _ownerTransform = ownerTransform;
 
         _teleportEffectPool.SpawnPos = _ownerTransform.transform;
+
+        _characterSkin = _ownerTransform.GetComponent<CharacterSkin>();
     }
 
     public override void FirstState()
@@ -48,5 +55,6 @@ public class TeleportActivator : SkillActivator
     public override void SecondState()
     {
         _daggerComp.Teleport(_ownerTransform);
+        _characterSkin.ActiveDissolve(true);
     }
 }

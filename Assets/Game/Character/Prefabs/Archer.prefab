@@ -3655,12 +3655,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ff41b64cb2dba945ae224cae82f4b3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _defaultMat: {fileID: 2100000, guid: 1053a69e8ac1bd7458d5d6959df1cf68, type: 2}
+  _dessolveMat: {fileID: 2100000, guid: a2cd2ca410319344299627a60b4789fb, type: 2}
+  _dissolveTime: 1
   _meshes:
   - {fileID: 91252544520472430}
   - {fileID: 91252544520472428}
   - {fileID: 91252544520472426}
-  _team1Mat: {fileID: 2100000, guid: 1053a69e8ac1bd7458d5d6959df1cf68, type: 2}
-  _team2Mat: {fileID: 2100000, guid: 9f9352a88ea2c2b49a6e832ae2246892, type: 2}
+  _team1Props: {fileID: 11400000, guid: 1e5281a62c597fd4a8000999875d63d6, type: 2}
+  _team2Props: {fileID: 11400000, guid: e84969b1c47c68142974e6f464698337, type: 2}
 --- !u!1 &7696625755142995726
 GameObject:
   m_ObjectHideFlags: 0
@@ -4818,9 +4821,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 1053a69e8ac1bd7458d5d6959df1cf68, type: 2}
     - target: {fileID: 13700002, guid: 189f93b868d15b74c8d93563dfbf0018, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: 189f93b868d15b74c8d93563dfbf0018, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1053a69e8ac1bd7458d5d6959df1cf68, type: 2}
+    - target: {fileID: 13700002, guid: 189f93b868d15b74c8d93563dfbf0018, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 13700004, guid: 189f93b868d15b74c8d93563dfbf0018, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

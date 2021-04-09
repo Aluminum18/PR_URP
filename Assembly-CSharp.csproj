@@ -133,6 +133,7 @@
     <Compile Include="Assets\Photon\PhotonUtilities\EditorTools\VersaMaskDrawer.cs" />
     <Compile Include="Assets\Photon\Simple\Utilities\GUITools\HeaderEditor.cs" />
     <Compile Include="Assets\Photon\PhotonUtilities\FastBitMask\FastBitMask64.cs" />
+    <Compile Include="Assets\Game\Weapon\Projectiles\Scripts\BlinkDagger.cs" />
     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\Enums\ConsumptionEnums.cs" />
     <Compile Include="Assets\Photon\Simple\Utilities\ContactGroups\Interfaces\IContactGroupMask.cs" />
     <Compile Include="Assets\Photon\Simple\Utilities\Networking\Interfaces\NetworkHitInerfaces.cs" />
@@ -439,7 +440,7 @@
     <Compile Include="Assets\Photon\Simple\Components\SyncOculus\Assistants\OculusAssist.cs" />
     <Compile Include="Assets\Game\Firebase\Scripts\RealTimeDatabase\RealTimeDBInitializer.cs" />
     <Compile Include="Assets\Game\Camera\Scripts\CharacterCameras.cs" />
-    <Compile Include="Assets\Game\Weapon\Projectiles\Scripts\BlinkDagger.cs" />
+    <Compile Include="Assets\Game\Character\Scripts\VO\GraphicProperties.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

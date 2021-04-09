@@ -8,16 +8,18 @@ public class CharacterSkinEditor : Editor
 {
     public override void OnInspectorGUI()
     {
+        DrawDefaultInspector();
+
         var myTarget = (CharacterSkin)target;
 
         if (GUILayout.Button("Set team 1 skin"))
         {
-            myTarget.SetMaterial(1);
+            myTarget.SetUniform(1);
         }
 
         if (GUILayout.Button("Set team 2 skin"))
         {
-            myTarget.SetMaterial(2);
+            myTarget.SetUniform(2);
         }
     }
 }

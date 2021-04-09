@@ -148,7 +148,7 @@ public class CharacterSpawner : MonoBehaviour, IOnEventCallback
             teamPos + Vector3.right * team.Count * 5f,
             Quaternion.identity);
 
-        character.GetComponent<CharacterSkin>().SetMaterial(teamNo);
+        character.GetComponent<CharacterSkin>().SetUniform(teamNo);
 
         character.GetComponent<CharacterAttribute>().AssignedUserId = _userId.Value;
 
@@ -171,7 +171,7 @@ public class CharacterSpawner : MonoBehaviour, IOnEventCallback
 
         var character = Instantiate(_archerPrefab, position, rotation);
 
-        character.GetComponent<CharacterSkin>().SetMaterial(team);
+        character.GetComponent<CharacterSkin>().SetUniform(team);
         character.GetComponent<PhotonView>().ViewID = viewId;
         character.GetComponent<CharacterAttribute>().AssignedUserId = userId;
 
