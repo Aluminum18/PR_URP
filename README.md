@@ -3,8 +3,11 @@ Implement common mechanics used by RPG game
 # Content
 - [Xray](#xray)
 - [Flexible position movement joystick](#flexible-position-movement-joystick)
+- [Adapt cast skill time with weapon](#adapt-cast-skill-time-with-weapon)
 - [Recycle Audio Source](#recycle-audio-source)
 - [Near projectile sound](#near-projectile-soud)
+- [IK Animation](#ik-animation)
+- [Debuggable with ScriptableObject](#debuggable-with-scriptableobject)
 
 ## Xray
 Common mechanic used in stealth games. Props in scene partially changes their material to create Xray effect
@@ -21,6 +24,11 @@ https://github.com/Aluminum18/PR_URP/assets/14157400/682e1810-79e0-492c-aeea-8d9
 ## Flexible position movement joystick
 Movement joystick that always follows player finger would provide a comfortable control experience.
 
+https://github.com/Aluminum18/PR_URP/assets/14157400/d5039150-fce1-4e84-a715-09d6093d884c
+
+
+## Adapt cast skill time with weapon
+
 ## Recycle Audio Source
 Every frame, Unity iterates all active Audio Sources in scene for updating its Audio System. Reusing AudioSource would reduce CPU overhead.
 
@@ -29,4 +37,7 @@ https://github.com/Aluminum18/PR_URP/assets/14157400/b4992b9a-dbb4-4736-9ee2-6ba
 ## Near projectile sound
 
 https://github.com/Aluminum18/PR_URP/assets/14157400/6a5e35f1-dde8-4a7f-9834-75875ab702d2
+
+## IK Animation
+## Debuggable with ScriptableObject
 
