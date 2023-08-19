@@ -31,7 +31,9 @@ https://github.com/Aluminum18/PR_URP/assets/14157400/b4992b9a-dbb4-4736-9ee2-6ba
 
 ## Near projectile sound
 
-https://github.com/Aluminum18/PR_URP/assets/14157400/6a5e35f1-dde8-4a7f-9834-75875ab702d2
+"Whiz" sound for projectiles to make them more powerful.
+
+https://github.com/Aluminum18/PR_URP/assets/14157400/b29b12d5-b4c4-4d03-82d4-4bd9397f8469
 
 ## IK Animation
 Animation is made by animating IK. Animation Rigging package is used. Useful for creating simple animations, modifying existing animations to align with scenario (such as positioning character hand to interact with item when doing "pick up" animation). Below are IK animations that applied to Idle animation.
